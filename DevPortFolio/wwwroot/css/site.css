@@ -1536,3 +1536,249 @@ body.light-theme .skills-section {
         transform: none;
     }
 }
+
+.iot-media {
+    margin-top: 24px;
+}
+
+    .iot-media h3 {
+        margin: 20px 0 12px;
+    }
+
+.fyp-gallery {
+    display: grid;
+    grid-template-columns: repeat( auto-fit, minmax(160px, 1fr) );
+    gap: 14px;
+}
+
+    .fyp-gallery img {
+        width: 100%;
+        height: 260px;
+        object-fit: contain;
+        background: #f3f5f8;
+        border: 1px solid #dce2ea;
+        border-radius: 12px;
+        padding: 6px;
+    }
+
+#iot-video-link {
+    display: inline-flex;
+    text-decoration: none;
+    margin-bottom: 12px;
+}
+
+.iot-media[hidden] {
+    display: none;
+}
+
+.fyp-hardware {
+    margin-top: 12px;
+}
+
+    .fyp-hardware img {
+        display: block;
+        width: 100%;
+        max-height: 420px;
+        object-fit: contain;
+        background: #f3f5f8;
+        border: 1px solid #dce2ea;
+        border-radius: 12px;
+        padding: 8px;
+    }
+
+    .fyp-hardware p {
+        margin-top: 10px;
+        color: #666;
+        font-size: 0.9rem;
+    }
+
+/* YouTube project demonstration */
+.project-video {
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    margin-top: 15px;
+    border-radius: 12px;
+    overflow: hidden;
+    background: #111;
+}
+
+    .project-video iframe {
+        display: block;
+        width: 100%;
+        height: 100%;
+        border: none;
+    }
+/* E-Notice screenshot gallery */
+.enotice-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 14px;
+    margin-top: 15px;
+}
+
+    .enotice-gallery img {
+        width: 100%;
+        height: 200px;
+        object-fit: contain;
+        background: #f3f5f8;
+        border: 1px solid #dce2ea;
+        border-radius: 12px;
+        padding: 8px;
+    }
+
+.iot-media[hidden] {
+    display: none !important;
+}
+
+
+/* Clickable E-Notice screenshots */
+.enotice-gallery img,
+.fyp-gallery img,
+.fyp-hardware img {
+    cursor: zoom-in;
+    transition: transform 0.2s ease;
+}
+
+    .enotice-gallery img:hover,
+    .fyp-gallery img:hover,
+    .fyp-hardware img:hover {
+        transform: scale(1.03);
+    }
+
+/* Image lightbox */
+.image-lightbox {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    background: rgba(8, 12, 24, 0.94);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 24px;
+}
+
+    .image-lightbox[hidden] {
+        display: none !important;
+    }
+
+.lightbox-content {
+    flex: 1;
+    min-width: 0;
+    text-align: center;
+}
+
+    .lightbox-content img {
+        display: block;
+        max-width: 100%;
+        max-height: 75vh;
+        width: auto;
+        height: auto;
+        object-fit: contain;
+        margin: 0 auto;
+        border-radius: 8px;
+    }
+
+#lightbox-caption,
+#lightbox-counter {
+    display: block;
+    color: white;
+    margin-top: 12px;
+    font-size: 14px;
+}
+
+.lightbox-close,
+.lightbox-prev,
+.lightbox-next {
+    border: none;
+    background: rgba(255, 255, 255, 0.12);
+    color: white;
+    cursor: pointer;
+    border-radius: 50%;
+    width: 44px;
+    height: 44px;
+    flex-shrink: 0;
+    font-size: 24px;
+}
+
+.lightbox-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+}
+
+    .lightbox-prev:hover,
+    .lightbox-next:hover,
+    .lightbox-close:hover {
+        background: rgba(255, 255, 255, 0.25);
+    }
+
+@media (max-width: 600px) {
+    .image-lightbox {
+        padding: 12px;
+        gap: 5px;
+    }
+
+    .lightbox-prev,
+    .lightbox-next {
+        width: 32px;
+        height: 32px;
+        font-size: 18px;
+    }
+}
+
+/* Minimal developer portfolio logo */
+.navbar-brand-custom {
+    display: inline-flex;
+    align-items: center;
+    font-size: 25px;
+    font-weight: 800;
+    letter-spacing: -1.2px;
+    color: #f4f7fc;
+    text-decoration: none;
+    line-height: 1;
+}
+
+    .navbar-brand-custom span {
+        color: #53c7f5;
+    }
+
+    .navbar-brand-custom:hover {
+        color: #f4f7fc;
+    }
+
+
+/* Brew & Bite screenshot gallery */
+.cafe-gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+    gap: 15px;
+    margin-top: 16px;
+}
+
+    .cafe-gallery img {
+        width: 100%;
+        height: 260px;
+        object-fit: contain;
+        background: #f3f5f8;
+        border: 1px solid #dce2ea;
+        border-radius: 12px;
+        padding: 8px;
+        cursor: zoom-in;
+        transition: transform 0.2s ease;
+    }
+
+        .cafe-gallery img:hover {
+            transform: scale(1.03);
+        }
+
+@media (max-width: 600px) {
+    .cafe-gallery {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 10px;
+    }
+
+        .cafe-gallery img {
+            height: 210px;
+        }
+}
