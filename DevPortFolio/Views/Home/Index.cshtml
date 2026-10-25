@@ -1,0 +1,400 @@
+﻿@{
+    ViewData["Title"] = "Home";
+}
+
+<section class="hero" id="home">
+    <div class="hero-content">
+        <p class="eyebrow">
+            <span class="status-dot"></span>
+            AVAILABLE FOR OPPORTUNITIES
+        </p>
+
+        <h1>
+            Hi, I'm <span class="gradient-text">Nurwaheeda.</span>
+        </h1>
+
+        <h2>
+            I build <span id="typing-text">web applications</span><span class="cursor">|</span>
+        </h2>
+
+        <p class="hero-description">
+            A Computer Science graduate passionate about software
+            development, solving problems, and creating useful
+            digital experiences. Currently learning and building
+            with C#, ASP.NET Core, and modern web technologies.
+        </p>
+
+        <div class="hero-buttons">
+            <a href="#projects" class="btn btn-primary">
+                Explore My Work <span>↗</span>
+            </a>
+
+            <a href="#about" class="btn btn-outline">
+                Get to Know Me
+            </a>
+        </div>
+
+        <div class="hero-socials">
+            <a href="https://github.com/waheeda99" target="_blank" rel="noopener noreferrer">
+                GitHub ↗
+            </a>
+            <span class="social-divider">/</span>
+            <a href="https://linkedin.com/in/waheeda-ali" target="_blank" rel="noopener noreferrer">
+                LinkedIn ↗
+            </a>
+        </div>
+    </div>
+
+    <div class="hero-visual">
+        <div class="orbit orbit-one"></div>
+        <div class="orbit orbit-two"></div>
+
+        <div class="code-card">
+            <div class="code-header">
+                <div class="window-dots">
+                    <span></span><span></span><span></span>
+                </div>
+                <span>Developer.cs</span>
+                <span class="code-status">C#</span>
+            </div>
+
+            <div class="code-body">
+                <p><span class="code-purple">public class</span> Developer</p>
+                <p>{</p>
+                <p class="indent"><span class="code-blue">public string</span> Name =</p>
+                <p class="indent code-string">"Nurwaheeda";</p>
+                <br />
+                <p class="indent"><span class="code-blue">public string</span> Focus =</p>
+                <p class="indent code-string">"Software Development";</p>
+                <br />
+                <p class="indent"><span class="code-purple">public void</span> Build()</p>
+                <p class="indent">{</p>
+                <p class="indent-two code-comment">// Learn. Build. Improve.</p>
+                <p class="indent">}</p>
+                <p>}</p>
+            </div>
+
+            <div class="code-footer">
+                <span><span class="status-dot"></span> Always learning</span>
+                <span>UTF-8</span>
+            </div>
+        </div>
+
+        <div class="floating-tag tag-top">
+            <span class="tag-icon">✦</span> Problem Solver
+        </div>
+
+        <div class="floating-tag tag-bottom">
+            <span class="tag-icon">&lt;/&gt;</span> Turning ideas into code
+        </div>
+    </div>
+
+    <a href="#about" class="scroll-indicator">
+        <span class="scroll-line"></span>
+        SCROLL TO EXPLORE
+    </a>
+</section>
+
+<section class="intro-strip">
+    <span>C#</span><span>ASP.NET CORE</span><span>JAVASCRIPT</span>
+    <span>SQL</span><span>WEB DEVELOPMENT</span><span>PROBLEM SOLVING</span>
+</section>
+
+<section class="about-section" id="about">
+    <div class="section-heading">
+        <span class="section-eyebrow">A LITTLE ABOUT ME</span>
+        <h2>Turning ideas into <span class="gradient-text">useful solutions.</span></h2>
+    </div>
+
+    <div class="about-grid">
+        <div class="about-main">
+            <p class="about-lead">
+                I'm a Computer Science graduate majoring in Web Technology
+                from Universiti Tun Hussein Onn Malaysia (UTHM).
+            </p>
+
+            <p>
+                I enjoy learning how applications work, building user-friendly
+                interfaces, and solving problems through technology. During my
+                internship at INSTEM, I gained practical experience maintaining
+                internal web systems, developing features, and troubleshooting issues.
+            </p>
+
+            <p>
+                I'm currently expanding my skills in application development,
+                including C#, ASP.NET Core MVC, and SQL Server. I'm eager to learn
+                from experienced developers and contribute to real-world projects.
+            </p>
+
+            <a class="about-link" href="#contact">
+                Let's connect <span aria-hidden="true">↗</span>
+            </a>
+        </div>
+
+        <div class="about-side">
+            <article class="about-info-card">
+                <span class="about-card-icon">⌘</span>
+                <div>
+                    <h3>Education</h3>
+                    <p>Bachelor's Degree in Computer Science</p>
+                    <span>Web Technology · UTHM</span>
+                </div>
+            </article>
+
+            <article class="about-info-card">
+                <span class="about-card-icon">⌘</span>
+                <div>
+                    <h3>Internship</h3>
+                    <p>IT Intern · ASDR / INSTEM</p>
+                    <span>Web systems, maintenance and troubleshooting</span>
+                </div>
+            </article>
+
+            <article class="about-info-card">
+                <span class="about-card-icon">⌘</span>
+                <div>
+                    <h3>Current Focus</h3>
+                    <p>Application Development</p>
+                    <span>C# · ASP.NET Core MVC · SQL Server</span>
+                </div>
+            </article>
+        </div>
+    </div>
+</section>
+
+<section class="skills-section" id="skills">
+    <div class="section-heading">
+        <span class="section-eyebrow">WHAT I WORK WITH</span>
+        <h2>My <span class="gradient-text">toolkit.</span></h2>
+        <p>Technologies I've used in projects, studies, and hands-on practice.</p>
+    </div>
+
+    <div class="skill-filters" role="group" aria-label="Filter skills">
+        <button class="skill-filter active" data-skill-filter="all" type="button">All</button>
+        <button class="skill-filter" data-skill-filter="web" type="button">Web Development</button>
+        <button class="skill-filter" data-skill-filter="app" type="button">Application Development</button>
+        <button class="skill-filter" data-skill-filter="database" type="button">Database</button>
+        <button class="skill-filter" data-skill-filter="tools" type="button">Tools & IoT</button>
+    </div>
+
+    <div class="skills-grid">
+        <article class="skill-card" data-skill-category="web">
+            <span class="skill-symbol">&lt;/&gt;</span>
+            <h3>HTML & CSS</h3>
+            <p>Building and styling web pages.</p>
+            <span class="skill-level">Used in projects</span>
+        </article>
+
+        <article class="skill-card" data-skill-category="web">
+            <span class="skill-symbol">JS</span>
+            <h3>JavaScript</h3>
+            <p>Adding interactive behaviour to websites.</p>
+            <span class="skill-level">Used in projects</span>
+        </article>
+
+        <article class="skill-card" data-skill-category="web">
+            <span class="skill-symbol">PHP</span>
+            <h3>PHP</h3>
+            <p>Server-side logic for web applications.</p>
+            <span class="skill-level">Used in internship</span>
+        </article>
+
+        <article class="skill-card" data-skill-category="app">
+            <span class="skill-symbol">C#</span>
+            <h3>C# & ASP.NET Core</h3>
+            <p>Learning MVC structure and application development.</p>
+            <span class="skill-level">Currently learning</span>
+        </article>
+
+        <article class="skill-card" data-skill-category="app">
+            <span class="skill-symbol">D</span>
+            <h3>Dart & Flutter</h3>
+            <p>Developing cross-platform mobile applications.</p>
+            <span class="skill-level">Used in projects</span>
+        </article>
+
+        <article class="skill-card" data-skill-category="database">
+            <span class="skill-symbol">SQL</span>
+            <h3>SQL & MySQL</h3>
+            <p>Working with relational data and queries.</p>
+            <span class="skill-level">Used in projects</span>
+        </article>
+
+        <article class="skill-card" data-skill-category="database">
+            <span class="skill-symbol">DB</span>
+            <h3>Firebase & Supabase</h3>
+            <p>Backend services and application data.</p>
+            <span class="skill-level">Used in projects</span>
+        </article>
+
+        <article class="skill-card" data-skill-category="tools">
+            <span class="skill-symbol">Git</span>
+            <h3>GitHub</h3>
+            <p>Hosting and managing project code.</p>
+            <span class="skill-level">Familiar</span>
+        </article>
+
+        <article class="skill-card" data-skill-category="tools">
+            <span class="skill-symbol">IoT</span>
+            <h3>Arduino & ThingSpeak</h3>
+            <p>Used in an IoT-based academic project.</p>
+            <span class="skill-level">Used in project</span>
+        </article>
+    </div>
+</section>
+
+<section class="contact-section" id="contact">
+    <div class="contact-panel">
+        <span class="section-eyebrow">GET IN TOUCH</span>
+        <h2>Let's build something <span class="gradient-text">useful.</span></h2>
+        <p>
+            I'm interested in entry-level software development opportunities
+            and opportunities to keep learning. Feel free to reach out!
+        </p>
+
+        <a class="contact-email" href="mailto:nurwaheedaali@gmail.com">
+            nurwaheedaali@example.com
+        </a>
+
+        <div class="contact-links">
+            <a href="https://www.linkedin.com/in/waheeda-ali/"
+               target="_blank" rel="noopener noreferrer">
+                LinkedIn ↗
+            </a>
+            <a href="https://github.com/waheeda99"
+               target="_blank" rel="noopener noreferrer">
+                GitHub ↗
+            </a>
+        </div>
+    </div>
+</section>
+
+
+<section class="projects-section" id="projects">
+    <div class="section-heading">
+        <p class="eyebrow">02 / SELECTED WORK</p>
+        <h2>Projects I've <span class="gradient-text">worked on.</span></h2>
+        <p>Real projects, practical problem-solving, and continuous learning.</p>
+    </div>
+
+    <div class="project-filters" role="group" aria-label="Filter projects">
+        <button class="filter-btn active" data-filter="all">All Projects</button>
+        <button class="filter-btn" data-filter="web">Web Development</button>
+        <button class="filter-btn" data-filter="app">Application Development</button>
+        <button class="filter-btn" data-filter="iot">IoT Projects</button>
+    </div>
+
+    <div class="project-grid">
+
+        <article class="project-card" data-category="web">
+            <div class="project-preview preview-web">
+                <span class="preview-label">WEB DEVELOPMENT</span>
+                <div class="preview-window">
+                    <div class="mini-browser"><span></span><span></span><span></span></div>
+                    <div class="mini-content">
+                        <div class="mini-logo">INSTEM.</div>
+                        <div class="mini-line"></div>
+                        <div class="mini-line short"></div>
+                        <div class="mini-panel">E-NOTICE SYSTEM</div>
+                    </div>
+                </div>
+                <span class="project-number">01</span>
+            </div>
+
+            <div class="project-info">
+                <div class="project-meta">
+                    <span class="project-type">Internship Project</span>
+                    <span class="project-status completed">Developed</span>
+                </div>
+                <h3>INSTEM E-Notice System</h3>
+                <p>A web-based announcement system for administrators to publish notices for display on a Smart TV.</p>
+                <div class="tech-tags">
+                    <span>PHP</span><span>MySQL</span><span>JavaScript</span>
+                </div>
+                <button class="project-details-btn" data-project="enotice">
+                    Explore project <span>↗</span>
+                </button>
+            </div>
+        </article>
+
+        <article class="project-card" data-category="iot">
+            <div class="project-preview preview-iot">
+                <span class="preview-label">INTERNET OF THINGS</span>
+                <div class="iot-visual">
+                    <div class="iot-ring">IoT</div>
+                    <span class="iot-node node-one">Fingerprint</span>
+                    <span class="iot-node node-two">Monitoring</span>
+                    <span class="iot-node node-three">Records</span>
+                </div>
+                <span class="project-number">02</span>
+            </div>
+
+            <div class="project-info">
+                <div class="project-meta">
+                    <span class="project-type">Final Year Project</span>
+                    <span class="project-status completed">Academic</span>
+                </div>
+                <h3>IoT Fingerprint Meal System</h3>
+                <p>A meal distribution and monitoring system for the RMT programme, designed to record meal claims and help prevent duplicate claims.</p>
+                <div class="tech-tags">
+                    <span>Flutter</span><span>Firebase</span><span>Arduino</span><span>ThingSpeak</span>
+                </div>
+                <button class="project-details-btn" data-project="iot">
+                    Explore project <span>↗</span>
+                </button>
+            </div>
+        </article>
+
+        <article class="project-card" data-category="app">
+            <div class="project-preview preview-app">
+                <span class="preview-label">APPLICATION DEVELOPMENT</span>
+                <div class="phone-mockup">
+                    <div class="phone-speaker"></div>
+                    <div class="phone-screen">
+                        <span class="phone-greeting">Guest Check-in</span>
+                        <div class="phone-input">Registration number</div>
+                        <div class="phone-input">Guest details</div>
+                        <div class="phone-action">Continue →</div>
+                    </div>
+                </div>
+                <span class="project-number">03</span>
+            </div>
+
+            <div class="project-info">
+                <div class="project-meta">
+                    <span class="project-type">Personal Project</span>
+                    <span class="project-status progress">In Development</span>
+                </div>
+                <h3>The Orchard Check-in</h3>
+                <p>A staff-assisted hotel check-in application with booking lookup, guest details and check-in workflow features.</p>
+                <div class="tech-tags">
+                    <span>Flutter</span><span>Dart</span><span>Supabase</span>
+                </div>
+                <button class="project-details-btn" data-project="orchard">
+                    Explore project <span>↗</span>
+                </button>
+            </div>
+        </article>
+
+    </div>
+</section>
+
+<div class="project-modal" id="project-modal" aria-hidden="true">
+    <div class="modal-backdrop" data-close-modal></div>
+    <div class="modal-panel" role="dialog" aria-modal="true"
+         aria-labelledby="modal-title">
+        <button class="modal-close" id="modal-close" aria-label="Close project details">×</button>
+        <p class="eyebrow" id="modal-category">PROJECT DETAILS</p>
+        <h2 id="modal-title">Project title</h2>
+        <p id="modal-description"></p>
+
+        <h3>Key features</h3>
+        <ul id="modal-features"></ul>
+
+        <h3>Technologies</h3>
+        <div class="tech-tags" id="modal-technologies"></div>
+
+        <p class="modal-status" id="modal-status"></p>
+    </div>
+</div>
+

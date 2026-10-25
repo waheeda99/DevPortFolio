@@ -1,0 +1,58 @@
+﻿
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@ViewData["Title"] | Nurwaheeda</title>
+    <meta name="description" content="Nurwaheeda's developer portfolio, projects, skills and experience." />
+    <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+</head>
+<body>
+    <header class="site-header">
+        <nav class="navbar" aria-label="Main navigation">
+            <a class="brand" asp-controller="Home" asp-action="Index">
+                <span class="brand-mark">N<span>.</span></span>
+                <span class="brand-name">Nurwaheeda<span class="brand-period">.</span></span>
+            </a>
+
+            <button class="menu-toggle" id="menu-toggle"
+                    aria-label="Toggle navigation"
+                    aria-expanded="false"
+                    aria-controls="nav-links">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+
+            <div class="nav-links" id="nav-links">
+                <a href="#home" class="nav-link active">Home</a>
+                <a href="#about" class="nav-link">About</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#contact" class="nav-link">Contact</a>
+
+                <button class="theme-toggle" id="theme-toggle"
+                        type="button" aria-label="Switch to light theme">
+                    <span id="theme-icon" aria-hidden="true">☀</span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        @RenderBody()
+    </main>
+
+    <footer class="site-footer">
+        <a class="footer-brand" asp-controller="Home" asp-action="Index">
+            Nurwaheeda<span>.</span>
+        </a>
+        <p>Designed and built with ASP.NET Core MVC.</p>
+        <p class="footer-copy">&copy; @DateTime.Now.Year Nurwaheeda. All rights reserved.</p>
+    </footer>
+
+    <script src="~/js/site.js" asp-append-version="true"></script>
+    @await RenderSectionAsync("Scripts", required: false)
+</body>
+</html>
